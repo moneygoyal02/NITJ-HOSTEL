@@ -1,0 +1,110 @@
+.allfacilities {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    width: 90vw;
+    margin: 5vw auto; /* Adjust margin to center horizontally */
+    border-radius: 8px;
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+  
+  .facility-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px; /* Add rounded corners for better aesthetics */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+  
+  /* Hover effect */
+  .facility-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  .facilities-heading {
+    margin: 5vw 5vw;
+    display: flex;
+    align-items: center;
+  }
+  
+  .facilities-heading hr {
+    border: 0;
+    height: 2.5px;
+    width: 4em;
+    background-color: orange;
+    margin: 0;
+    margin-left: 10px;
+  }
+  
+  .facility-logo {
+    padding: 0.5em;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  .facility-logo img {
+    width: 70px; /* Use fixed width for consistency */
+    height: auto;
+  }
+  
+  .facility-details {
+    padding: 1em;
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .facility-container h1 {
+    font-size: 1.1em; /* Slightly bigger for readability */
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .facility-container p {
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .facility-container h3 {
+    font-size: 0.85em;
+    color: #888;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (min-width: 768px) {
+    .facility-container {
+      width: 48%; /* For medium screens, 2 items in a row */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .facility-container {
+      width: 30%; /* For large screens, 3 items in a row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .facility-container {
+      width: 100%; /* For small screens, 1 item per row */
+    }
+  
+    .allfacilities {
+      padding: 10px;
+      width: 100%;
+      margin: 0;
+      gap: 1em; /* Reduce gap for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,205 @@
+/* Director Message Section */
+.director-message-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.director-message-section .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.director-message-section .section-header h2 {
+  color: #1a237e;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.director-message-section .section-divider {
+  height: 4px;
+  width: 80px;
+  background: linear-gradient(to right, #ff9800, #ff5722);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.director-message-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.director-message-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #ff9800, #ff5722);
+}
+
+.director-message-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 250px;
+}
+
+.director-message-image img {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 5px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.director-message-image img:hover {
+  transform: scale(1.02);
+}
+
+.director-message-image .director-title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.director-message-image .director-title h3 {
+  color: #ff5722;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.director-message-image .director-title span {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.director-message-text {
+  flex: 1;
+  position: relative;
+  min-width: 300px;
+  padding: 25px 35px;
+  background-color: rgba(255, 248, 240, 0.5);
+  border-radius: 15px;
+}
+
+.director-message-text .quote-mark {
+  font-size: 3rem;
+  color: #ff9800;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.director-message-text .left-quote {
+  top: 0;
+  left: 10px;
+}
+
+.director-message-text .right-quote {
+  bottom: 80px;
+  right: 10px;
+}
+
+.director-message-text p {
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+.director-message-text .signature {
+  margin-top: 20px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.director-message-text .signature span {
+  font-style: italic;
+  color: #777;
+}
+
+.director-message-text .signature strong {
+  color: #ff5722;
+}
+
+.director-message-text .read-more-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 87, 34, 0.2);
+}
+
+.director-message-text .read-more-btn:hover {
+  background-color: #ff9800;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 87, 34, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .director-message-container {
+    padding: 30px;
+  }
+  
+  .director-message-section .section-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .director-message-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .director-message-section {
+    padding: 40px 15px;
+  }
+  
+  .director-message-section .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .director-message-container {
+    padding: 25px;
+    gap: 20px;
+  }
+  
+  .director-message-image img {
+    width: 180px;
+  }
+  
+  .director-message-text .quote-mark {
+    font-size: 2rem;
+  }
+  
+  .director-message-text .right-quote {
+    bottom: 60px;
+  }
+}
