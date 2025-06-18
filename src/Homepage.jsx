@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './App.css';
-import Slideshows from './Slideshow';
 import WardenMessage from './Wardenmessage';
 import DirectorMessage from './DirectorMessage';
 import HostelList from './List';
@@ -10,7 +9,7 @@ import { useInView } from 'react-intersection-observer';
 
 const Homepage = () => {
     const controls = useAnimation();
-    const [ref, inView] = useInView({
+    const [inView] = useInView({
         triggerOnce: true,
         threshold: 0.2
     });
@@ -106,14 +105,14 @@ const Homepage = () => {
                                 visible: { opacity: 1, scale: 1, transition: { delay: 0.2, duration: 0.5 } }
                             }}
                         >
-                            <motion.button 
+                            <motion.a
+                                href="#hostel-list"
                                 className="explore-btn"
                                 whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(0, 0, 0, 0.2)" }}
                                 whileTap={{ scale: 0.95 }}
-                                onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
                             >
                                 Explore Hostels
-                            </motion.button>
+                            </motion.a>
                         </motion.div>
                     </motion.div>
                     
@@ -131,40 +130,6 @@ const Homepage = () => {
             </motion.section>
 
            
-            <motion.div 
-                ref={ref}
-                className="enhanced-slideshow-section"
-                initial="hidden"
-                animate={controls}
-                variants={{
-                    hidden: { opacity: 0 },
-                    visible: { opacity: 1, transition: { duration: 0.8 } }
-                }}
-            >
-                <motion.div 
-                    className="slideshow-header"
-                    variants={{
-                        hidden: { opacity: 0, y: 30 },
-                        visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-                    }}
-                >
-                    <h2>Explore Our Hostels</h2>
-                    <div className="section-divider"></div>
-                    <p>Take a virtual tour of our state-of-the-art hostel facilities</p>
-                </motion.div>
-                
-                <motion.div 
-                    className="slideshow-container"
-                    variants={{
-                        hidden: { opacity: 0, y: 30 },
-                        visible: { opacity: 1, y: 0, transition: { delay: 0.3, duration: 0.6 } }
-                    }}
-                >
-                    <Slideshows />
-                </motion.div>
-            </motion.div>
-                
-       
             <motion.section 
                 className="features-section"
                 initial="hidden"
@@ -230,7 +195,7 @@ const Homepage = () => {
                         transition={{ delay: 0.1, duration: 0.5 }}
                         whileHover={{ y: -5 }}
                     >
-                        <h3>1000+</h3>
+                        <h3>5000+</h3>
                         <p>Happy Students</p>
                     </motion.div>
                     <motion.div 
@@ -241,7 +206,7 @@ const Homepage = () => {
                         transition={{ delay: 0.2, duration: 0.5 }}
                         whileHover={{ y: -5 }}
                     >
-                        <h3>8</h3>
+                        <h3>14</h3>
                         <p>Hostel Blocks</p>
                     </motion.div>
                     <motion.div 
@@ -292,7 +257,7 @@ const Homepage = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.4, duration: 0.5 }}
                     >
-                        Our hostels are more than just places to stay; they are thriving communities within the scenic NIT Jalandhar campus. Representing unity in diversity, these hostels bring together students from across the country, creating a unique blend of cultures and friendships that enriches every resident's experience.
+                        Our hostels are more than just places to stay; they are thriving communities within the scenic NIT Jalandhar campus. Representing unity in diversity, these hostels bring together students from across the country, creating a unique blend of cultures and friendships that enriches every resident&apos;s experience.
                     </motion.p>
                     <motion.p
                         initial={{ opacity: 0, x: -20 }}
@@ -308,7 +273,9 @@ const Homepage = () => {
            
             <DirectorMessage />
             <WardenMessage />
-            <HostelList />
+            <div id="hostel-list">
+                <HostelList />
+            </div>
         </div>
     );
 };
