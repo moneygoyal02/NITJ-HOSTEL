@@ -1,9 +1,8 @@
-
 const Gallerydata = [
     {
       id: 1,
       category: 'bhawan',
-      imgSrc: './src/images/gallery1.jpeg',
+      imgSrc: '/images/gallery1.jpeg',
       alt: 'bhawan_3',
       title: 'Bhawan',
       description: 'Bhawan',
@@ -12,7 +11,7 @@ const Gallerydata = [
     {
       id: 2,
       category: 'event',
-      imgSrc: './src/images/gallery2.jpg',
+      imgSrc: '/images/gallery2.jpg',
       alt: 'event_2',
       title: 'Events',
       description: 'Events',
@@ -21,7 +20,7 @@ const Gallerydata = [
     {
       id: 3,
       category: 'sports',
-      imgSrc: './src/images/gallery3.jpeg',
+      imgSrc: '/images/gallery3.jpeg',
       alt: 'sports_10',
       title: 'Sports',
       description: 'Sports',
@@ -30,7 +29,7 @@ const Gallerydata = [
     {
       id: 4,
       category: 'event',
-      imgSrc: './src/images/gallery4.jpg',
+      imgSrc: '/images/gallery4.jpg',
       alt: 'event_2',
       title: 'Events',
       description: 'Events',
@@ -39,7 +38,7 @@ const Gallerydata = [
     {
       id: 5,
       category: 'bhawan',
-      imgSrc: './src/images/gallery5.jpeg',
+      imgSrc: '/images/gallery5.jpeg',
       alt: 'bhawan_1.jpg',
       title: 'Bhawan',
       description: 'Bhawan',
@@ -48,7 +47,7 @@ const Gallerydata = [
     {
       id: 1,
       category: 'bhawan',
-      imgSrc: './src/images/gallery1.jpeg',
+      imgSrc: '/images/gallery1.jpeg',
       alt: 'bhawan_3',
       title: 'Bhawan',
       description: 'Bhawan',
@@ -57,7 +56,7 @@ const Gallerydata = [
     {
       id: 2,
       category: 'event',
-      imgSrc: './src/images/gallery2.jpg',
+      imgSrc: '/images/gallery2.jpg',
       alt: 'event_2',
       title: 'Events',
       description: 'Events',
@@ -66,7 +65,7 @@ const Gallerydata = [
     {
       id: 6,
       category: 'bhawan',
-      imgSrc: './src/images/gallery6.webp',
+      imgSrc: '/images/gallery6.webp',
       alt: 'bhawan_1.jpg',
       title: 'Bhawan',
       description: 'Bhawan',
@@ -75,7 +74,7 @@ const Gallerydata = [
     {
       id: 7,
       category: 'bhawan',
-      imgSrc: './src/images/gallery7.jpeg',
+      imgSrc: '/images/gallery7.jpeg',
       alt: 'bhawan_1.jpg',
       title: 'Bhawan',
       description: 'Bhawan',
@@ -84,7 +83,7 @@ const Gallerydata = [
     {
       id: 8,
       category: 'bhawan',
-      imgSrc: './src/images/gallery8.jpeg',
+      imgSrc: '/images/gallery8.jpeg',
       alt: 'bhawan_1.jpg',
       title: 'Bhawan',
       description: 'Bhawan',
@@ -93,7 +92,7 @@ const Gallerydata = [
     {
       id: 9,
       category: 'bhawan',
-      imgSrc: './src/images/gallery9.jpeg',
+      imgSrc: '/images/gallery9.jpeg',
       alt: 'bhawan_1.jpg',
       title: 'Bhawan',
       description: 'Bhawan',
@@ -102,7 +101,7 @@ const Gallerydata = [
     {
       id: 7,
       category: 'bhawan',
-      imgSrc: './src/images/gallery7.jpeg',
+      imgSrc: '/images/gallery7.jpeg',
       alt: 'bhawan_1.jpg',
       title: 'Bhawan',
       description: 'Bhawan',
@@ -111,7 +110,7 @@ const Gallerydata = [
     {
       id: 8,
       category: 'bhawan',
-      imgSrc: './src/images/gallery8.jpeg',
+      imgSrc: '/images/gallery8.jpeg',
       alt: 'bhawan_1.jpg',
       title: 'Bhawan',
       description: 'Bhawan',
@@ -120,7 +119,7 @@ const Gallerydata = [
     {
       id: 10,
       category: 'bhawan',
-      imgSrc: './src/images/gallery10.jpg',
+      imgSrc: '/images/gallery10.jpg',
       alt: 'bhawan_1.jpg',
       title: 'Bhawan',
       description: 'Bhawan',
