@@ -10,6 +10,7 @@ const HostelList = () => {
         { name: 'Boys Hostel 4', key: 'BH-4' },
         { name: 'Boys Hostel 6', key: 'BH-6' },
         { name: 'Boys Hostel 7', key: 'BH-7' },
+        { name: 'Boys Hostel 7E', key: 'BH-7E' },
         { name: 'Mega Boys Hostel: Block - A', key: 'MBH-A-Block' },
         { name: 'Mega Boys Hostel: Block - B', key: 'MBH-B-Block' },
         { name: 'Mega Boys Hostel: Block - F', key: 'MBH-F-Block' },

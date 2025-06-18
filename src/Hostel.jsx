@@ -69,6 +69,7 @@ const Hostel = () => {
             wardenMessage={currentHostel.wardenMessage} 
             wardenName={currentHostel.wardenName} 
             wardenImage={currentHostel.wardenImage} 
+            wardenEmail={currentHostel.wardenEmail}
           />
         </section>
 
