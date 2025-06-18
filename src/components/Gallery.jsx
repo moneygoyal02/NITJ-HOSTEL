@@ -7,8 +7,7 @@ const Gallery = ({ gallery }) => {
   return (
     <div>
       <div className="section-title" data-aos="zoom-out">
-        <h2>GALLERY<span><hr/></span></h2>
-        <p>RECENT ACTIVITIES & EVENTS</p>
+       
       </div>
       <div className='cont'>
         <div className='portfolio-container'>

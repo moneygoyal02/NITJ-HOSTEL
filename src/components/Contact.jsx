@@ -14,10 +14,7 @@ export const Contact = () => {
 
   return (
     <>
-      <div className="section-title" data-aos="zoom-out">
-        <h2>HOSTEL STAFF<span><hr/></span></h2>
-        <p>CONTACT DETAILS</p>
-      </div>
+      
       <table className="custom-table">
         <thead>
           <tr>

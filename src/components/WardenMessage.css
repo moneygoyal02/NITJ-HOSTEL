@@ -142,3 +142,165 @@
       line-height: 1.2em;
     }
   }
+
+/* Card container */
+.warden-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(26,35,126,0.08), 0 1.5px 8px rgba(26,35,126,0.06);
+  padding: 2.5rem 2rem;
+  gap: 2.5rem;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.warden-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 220px;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.warden-image-wrapper {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 6px #e3e7fa, 0 2px 16px rgba(26,35,126,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fa;
+}
+.warden-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1a237e22;
+}
+.warden-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+.warden-name {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #1a237e;
+}
+.warden-designation {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+.warden-email {
+  font-size: 0.95rem;
+  color: #007acc;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.warden-message-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: transparent;
+  padding: 0 0.5rem;
+}
+.warden-quote-icon {
+  font-size: 3.5rem;
+  color: #e0e0e0;
+  position: absolute;
+  left: -1.5rem;
+  top: -1.2rem;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+.warden-quote-icon.right {
+  left: unset;
+  right: -1.5rem;
+  top: unset;
+  bottom: -1.2rem;
+  transform: rotate(180deg);
+}
+.warden-message-content {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+.warden-message-title {
+  font-size: 1.5rem;
+  color: #1a237e;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.warden-message-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+.warden-signature {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.warden-signature-name {
+  font-weight: 600;
+  color: #1a237e;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .warden-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+  .warden-image-section {
+    min-width: 0;
+  }
+  .warden-message-section {
+    padding: 0;
+  }
+}
+@media (max-width: 600px) {
+  .warden-card {
+    padding: 1.2rem 0.5rem;
+    gap: 1rem;
+  }
+  .warden-image-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  .warden-quote-icon, .warden-quote-icon.right {
+    font-size: 2.2rem;
+    left: -0.7rem;
+    right: -0.7rem;
+    top: -0.7rem;
+    bottom: -0.7rem;
+  }
+  .warden-message-title {
+    font-size: 1.1rem;
+  }
+  .warden-message-text {
+    font-size: 0.98rem;
+  }
+}
