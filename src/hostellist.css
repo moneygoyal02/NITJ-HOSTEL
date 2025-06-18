@@ -54,7 +54,7 @@
 }
 
 .arrow {
-  color: #1E90FF; /* The blue color for the arrow */
+  color: #1E90FF; 
   margin-right: 10px;
   font-size: 20px;
 }
@@ -68,7 +68,7 @@ h2 {
   padding-bottom: 10px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .mainDiv {
       flex-direction: column;

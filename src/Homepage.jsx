@@ -42,7 +42,7 @@ const Homepage = () => {
 
     return (
         <div className="homepage">
-            {/* Enhanced Hero Section */}
+          
             <motion.section 
                 className="enhanced-hero-section" 
                 initial={{ opacity: 0 }}
@@ -130,7 +130,7 @@ const Homepage = () => {
                 </motion.div>
             </motion.section>
 
-            {/* Enhanced Slideshow Section */}
+           
             <motion.div 
                 ref={ref}
                 className="enhanced-slideshow-section"
@@ -164,7 +164,7 @@ const Homepage = () => {
                 </motion.div>
             </motion.div>
                 
-            {/* Features Section */}
+       
             <motion.section 
                 className="features-section"
                 initial="hidden"
@@ -213,7 +213,7 @@ const Homepage = () => {
                 </div>
             </motion.section>
 
-            {/* Statistics Section */}
+           
             <motion.section 
                 className="stats-section"
                 initial={{ opacity: 0, y: 30 }}
@@ -269,7 +269,7 @@ const Homepage = () => {
                 </div>
             </motion.section>
 
-            {/* About Section */}
+           
             <motion.section 
                 className="about-section"
                 initial={{ opacity: 0 }}
@@ -305,13 +305,9 @@ const Homepage = () => {
                 </div>
             </motion.section>
 
-            {/* Director Message Section */}
+           
             <DirectorMessage />
-            
-            {/* Chief Warden Message Section */}
             <WardenMessage />
-            
-            {/* Hostel List */}
             <HostelList />
         </div>
     );

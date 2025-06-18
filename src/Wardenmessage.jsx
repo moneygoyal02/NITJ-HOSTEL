@@ -81,7 +81,7 @@ const Wardenmessage = () => {
           </motion.div>
           
           <motion.a 
-            href="#read-more" 
+            href="https://departments.nitj.ac.in/dept/ch/Faculty/6430445138bff038a7804c3a" 
             className="read-more-btn"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

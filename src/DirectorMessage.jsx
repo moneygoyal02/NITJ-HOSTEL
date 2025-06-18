@@ -1,7 +1,7 @@
 import React from 'react';
 import './DirectorMessage.css';
 import { motion } from 'framer-motion';
-import DirectorImage from './Director_of_NITJ.png'; // Using the existing image in your project
+import DirectorImage from './Director_of_NITJ.jpg'; 
 
 const DirectorMessage = () => {
   return (
@@ -64,7 +64,7 @@ const DirectorMessage = () => {
           </div>
           
           <motion.a 
-            href="#read-more" 
+            href="https://www.nitj.ac.in/admin/director.html" 
             className="read-more-btn"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

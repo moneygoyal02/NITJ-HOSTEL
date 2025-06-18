@@ -1,6 +1,4 @@
-/* ============================================
-   CSS Reset & Global Styles
-============================================ */
+
 *,
 *::before,
 *::after {
@@ -21,9 +19,7 @@ img {
   display: block;
 }
 
-/* ============================================
-   Hostel Page Container
-============================================ */
+
 .hostel-page {
   min-height: 100vh;
   background-color: #f8f9fa;
@@ -32,9 +28,7 @@ img {
   overflow-x: hidden;
 }
 
-/* ============================================
-   Back to Home Button
-============================================ */
+
 .back-to-home {
   position: fixed;
   top: 20px;
@@ -58,9 +52,7 @@ img {
   transform: translateX(-5px);
 }
 
-/* ============================================
-   Quick Navigation
-============================================ */
+
 .hostel-nav {
   position: sticky;
   top: 0;
@@ -89,18 +81,13 @@ img {
   color: #fff;
 }
 
-/* ============================================
-   Hero Section
-============================================ */
 .hostel-hero {
   margin-bottom: 2rem;
   width: 100%;
   overflow: hidden;
 }
 
-/* ============================================
-   Main Content Container
-============================================ */
+
 .hostel-content {
   max-width: 1200px;
   width: 100%;
@@ -109,9 +96,6 @@ img {
   box-sizing: border-box;
 }
 
-/* ============================================
-   Section Styling
-============================================ */
 .hostel-section {
   background-color: #fff;
   border-radius: 15px;
@@ -136,9 +120,7 @@ img {
   height: auto;
 }
 
-/* ============================================
-   Not Found Page Styling
-============================================ */
+
 .hostel-not-found {
   min-height: 100vh;
   display: flex;
@@ -169,9 +151,7 @@ img {
   transform: translateY(-2px);
 }
 
-/* ============================================
-   Responsive Design
-============================================ */
+
 @media (max-width: 768px) {
   .hostel-nav {
     flex-wrap: wrap;
